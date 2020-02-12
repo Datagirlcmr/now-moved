@@ -50,33 +50,37 @@ body {
   }
 }
 
-img{
+img {
   width: 100%;
   height: 100%;
   clip-path: polygon(100% 0%, 64% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
 }
 
-.tools span{
+.icons{
+  width: auto;
+}
+
+.tools span {
   border-radius: 4px;
   border: 2px solid #92eac0;
   padding: 8px;
   margin-right: 10px;
   margin-bottom: 10px;
-  font-family: Camphor,Open Sans,Segoe UI,sans-serif;
+  font-family: Camphor, Open Sans, Segoe UI, sans-serif;
   font-size: .85em;
   color: #525f7f;
 }
 
-.linky{
+.linky {
   background: #747fe0;
   color: #fff;
 }
 
-.whity{
+.whity {
   color: #747fe0;
   background: whitesmoke;
 }
 
-.projecta{
+.projecta {
   background: whitesmoke;
 }
