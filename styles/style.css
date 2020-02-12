@@ -9,12 +9,12 @@ body {
 
 .namy {
   font-size: 80px;
-  font-family: fantasy;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 #blink {
   width: 40px;
-  height: 90px;
+  height: 100px;
   margin-left: 5px;
   background-color: #007bff;
   animation-name: blink;
