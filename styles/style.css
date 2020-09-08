@@ -12,6 +12,24 @@ body {
   color: #dc3545 !important;
 }
 
+h4 {
+  font-size: 12px;
+  transition: font-size 2s;
+}
+
+h4:hover {
+  font-size: 15px;
+}
+
+.fading {
+  font-size: 32px;
+  transition: font-size 2s;
+}
+
+.fading:hover {
+  font-size: 50px;
+}
+
 #blinky {
   width: 10px;
   height: 25px;
@@ -43,7 +61,12 @@ body {
 .project {
   width: 100%;
   height: 100%;
+  transition: width 2s;
   clip-path: polygon(100% 0%, 64% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+}
+
+.project:hover {
+  width: 120%;
 }
 
 .icons{
