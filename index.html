@@ -51,62 +51,74 @@
     <div>
       <h1 class="text-center text-secondary border-bottom font-weight-bolder fading">ABOUT</h1>
     </div>
+
     <div class="container"> 
-      <div class="row m-5">
-        <div class="col-10 d-flex">
-          <img class="image-fluid main-pic d-none d-sm-block" src="./images/linkedin.jpeg" alt="selma-ndi">
-          <p class="text-center ml-3 pt-5 mt-5 about-me"> I am an Award-winning full-stack web developer (& M.B.A.) with an accountant’s eye, an administrator’s voice, and a developer’s mind.
-           A get-it-done and get-it-done-well kind of woman.</p>
-        </div>  
+      <div class="row mt-5">
+        <div class="col-12 col-sm-5"> 
+          <div class="col-10">
+            <img class="image-fluid main-pic anim1" src="./images/linkedin.jpeg" alt="selma-ndi">
+          </div>
+          <div class="col-10 d-flex flex-column justify-content-center anim2">
+            <p class="pt-3 blink text-center"> I am an Award-winning full-stack web developer (& M.B.A.) with an accountant’s eye, an administrator’s voice, and a developer’s mind.
+              A get-it-done and get-it-done-well kind of woman.</p>
+              <p class= "text-secondary blink">
+                Check out my <a class="blink" target="_blank" href="https://docs.google.com/document/d/1T-oj7EtC7HGLT8s2nXODzL9TPZ2CxEhrtr85xL-uoDU/edit?usp=sharing">Resume</a>
+              </p>
+          </div> 
+        </div>
+        <div class="col-12 col-sm-6">
+          <div class="container bg-dark">
+      
+            <div class = "col-10 m-auto p-3 text-center">
+
+              <div class="col-10 pb-3">
+                <h4 class="text-white"> > Selma.skills </h4>
+                <h6 class="text-danger" id="skills"></h6>
+              </div>
+              
+              <div class="col-10 p-3">
+                <h4 class="text-white"> > Selma.currentLocation </h4>
+                <h6 class="text-danger">Bamenda, Cameroon</h6>
+              </div>
+        
+              <div class="col-10 pb-3">
+                <h4 class="text-white"> > Selma.contactInfo </h4>
+                <h6 class="text-secondary">[
+                    <a  class="text-danger" target="_blank" href="mailto: datagirlcmr@gmail.com">" datagirlcmr@gmail.com ",</a>
+                    <a class="text-danger" target="_blank" href="https://www.linkedin.com/in/selma-ndi/">" LinkedIn ",</a>
+                    <a class="text-danger" target="_blank" href="https://github.com/Datagirlcmr">" GitHub ",</a>
+                    <a  class="text-danger" target="_blank" href="https://twitter.com/SelmaNdi">" Twitter "</a>
+                    ]
+                </h6>
+              </div>
+        
+              <div class="col-10 pb-3">
+                <h4 class="text-white"> > Selma.education </h4>
+                <h6 class="text-danger">"Full Stack Web Developer - Microverse"</h6> 
+                <h6 class="text-secondary">"MBA.Management - The ICT University"</h6>
+              </div>
+        
+              <div class="col-10">
+                <h4 class="text-white"> > Selma.hobbies </h4>
+                <h6 class="text-secondary">["design", "gaming", "Movies", "Reading"]</h6>
+              </div>
+          
+              <div class="text-center">
+                >  
+                <div class="text-center" id="blinky"></div>
+              </div>
+            </div>
+        
+          </div>
+        </div>
+
+         
       </div>
     </div>
+    
   </section>
 
-  <div class="container-fluid bg-dark">
-      
-    <div class = "col-10 m-auto p-3 text-center">
-      <div class="col-10 p-3">
-        <h4 class="text-white"> > Selma.currentLocation </h4>
-        <small class="text-danger">Bamenda, Cameroon</small>
-      </div>
-
-      <div class="col-10 pb-3">
-        <h4 class="text-white"> > Selma.contactInfo </h4>
-        <small class="text-secondary">[
-            <a  class="text-danger" target="_blank" href="mailto: datagirlcmr@gmail.com">" datagirlcmr@gmail.com ",</a>
-            <a class="text-danger" target="_blank" href="https://www.linkedin.com/in/selma-ndi/">" LinkedIn ",</a>
-            <a class="text-danger" target="_blank" href="https://github.com/Datagirlcmr">" GitHub ",</a>
-            <a  class="text-danger" target="_blank" href="https://twitter.com/SelmaNdi">" Twitter "</a>
-            ]
-        </small>
-      </div>
-
-      <div class="col-10 pb-3">
-        <h4 class="text-white"> > Selma.education </h4>
-        <small class="text-danger">"Full Stack Web Developer - Microverse"</small> 
-        <small class="text-secondary">"MBA.Management - The ICT University"</small>
-      </div>
-
   
-      <div class="col-10 pb-3">
-        <h4 class="text-white"> > Selma.skills </h4>
-        <small class="text-danger">[" HTML " , " CSS " , " Bootstrap " , 
-            "JavaScript" , " Ruby " ,  " Ruby on Rails " , " React " , " git "]</small>
-      </div>
-      <div class="col-10">
-        <h4 class="text-white"> > Selma.hobbies </h4>
-        <small class="text-secondary">["design", "gaming", "Movies", "Reading"]</small>
-      </div>
-  
-      <div class="text-center">
-        >  
-        <div class="text-center" id="blinky"></div>
-      </div>
-    </div>
-
-  </div>
-
-    
 
 <!--Projects-->    
     <section class="mt-5">
@@ -115,7 +127,7 @@
         <h1 class="text-center text-secondary border-bottom fading">PROJECTS</h1>
       </div>
 
-      <div class=" jumbotron col-md-10 m-auto d-flex bg-white">
+      <div class=" jumbotron col-md-10 m-auto d-flex bg-white fade-in">
         <div class="col-md-6 d-none d-sm-block">
           <img class="image-fluid project" src="./images/steps.png" alt="steps-tracker">
         </div>
@@ -340,7 +352,7 @@
 <!--Copyright-->
     <section class="footer mt-5 d-flex justify-content-center">
       <h5>***</h5>
-      <small class="text-secondary"> Made by Selma Ndi &copy; 2020</small>
+      <h6 class="text-secondary"> Made by Selma Ndi &copy; 2020</h6>
     </section>
 
     <!-- JS files: jQuery first, then Popper.js, then Bootstrap JS -->
