@@ -10,18 +10,18 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="./main.js"></script>
 </head>
-<body class="mb-5">
+<body>
   <!--navbar-->
-    <nav class="navbar navbar-expand-sm bg-dark justify-content-end">
-      <ul class="navbar-nav"> 
+    <nav class="navbar navbar-expand bg-dark">
+      <ul class="navbar-nav ml-auto"> 
         <li class="nav-item">
-          <a class="nav-link mr-3 hover-change" href="#about">About</a>
+          <a class="nav-link hover-change d-none d-sm-block" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link mr-3 hover-change" href="#projects">Projects</a>
+          <a class="nav-link hover-change" href="#projects">Projects</a>
         </li>
         <li class="nav-item">
-         <a class="nav-link mr-3 hover-change" href="#blog">Articles</a>
+         <a class="nav-link hover-change" href="#blog">Articles</a>
         </li>
         <li class="nav-item">
           <a class="nav-link hover-change" href="#contact">Contact</a>
@@ -30,54 +30,84 @@
     </nav>
 
   <!--Basic Information-->
-    <div class = "jumbotron bg-dark">
-      <div class="m-auto col-md-10">
+    <div class = "jumbotron bg-dark d-flex">
+      <div class="m-auto col-md-6">
         <div class="d-flex flex-column col-xs-12">
           <div class="text-white font-weight-bold name-title mr-2"> >  Selma Ndi </div>
           <div class="text-danger font-weight-bold blink" id="blink"></div>
         </div>
         <br> <br>
-        <p class= "text-secondary"> I am a <span class="text-danger font-weight-bold">self-taught</span> freelance web developer. My passion is building simple, beautiful user experiences.</p>
         <p class= "text-secondary">
           Check out some of my <a href="#projects">projects</a>
         </p>
       </div>
     </div>
 
-    <div class = "jumbotron bg-dark text-secondary col-md-10 m-auto">
-      <div>
-        > Selma.currentLocation
-        <p class="text-warning">Bamenda, Cameroon</p>
-      </div>
-      <div>
-        > Selma.contactInfo <br>
-        <p class=" col-md-6 d-flex justify-content-between">[
-          <a href="#">"datagirlcmr@gmail.com",</a>
-          <a href="https://www.linkedin.com/in/selma-ndi/">"LinkedIn"</a>
-          <a href="https://github.com/Datagirlcmr">"GitHub"</a>
-          <a href="https://twitter.com/SelmaNdi">"Twitter"</a>
-          ]
-        </p>
-      </div>
-      <div>
-        > Selma.education
-        <p class="text-warning">"Full Stack Web Developer - Microverse"</p>
-        <p class="text-warning">"MBA.Management - The ICT University"</p>
-      </div>
-      <div>
-        > Selma.skills
-        <p class="text-warning">[" HTML " , " CSS " , " Bootstrap " , 
-          "JavaScript" , " Ruby " ,  " Ruby on Rails " , " React " , " git "]</p>
-      </div>
-      <div>
-        > Selma.hobbies
-        <p class="text-warning">["design", "gaming", "Movies", "Reading"]</p>
-      </div>
-      <div class="d-flex">
-        >  
-        <div id="blinky"></div>
+  <!--Introduction -->
+
+  <section class="mt-5">
+    <a id="about"></a>
+    <div>
+      <h1 class="text-center text-secondary border-bottom">About</h1>
+    </div>
+    <div class="container"> 
+      <div class="row">
+        <div class="col-md-5">
+          <img class="image-fluid main-pic d-none d-sm-block" src="./images/linkedin.jpeg" alt="selma-ndi">
+         <p class= "font-weight-bold text-secondary"> I am an Award-winning full-stack web developer (& M.B.A.) with an accountant’s eye, an administrator’s voice, and a developer’s mind.
+           A get-it-done and get-it-done-well kind of woman.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="image-fluid" src="./images/about.png" alt="skills">
+        </div>
+        
       </div>
     </div>
+  </section>
+
+  <div class="container">
+    <div class="">
+      
+      <div class = "jumbotron bg-dark text-secondary col-md-10 m-auto">
+        <div>
+          > Selma.currentLocation
+          <p class="text-warning">Bamenda, Cameroon</p>
+        </div>
+        <div>
+          > Selma.contactInfo <br>
+          <p class=" col-md-6 d-flex justify-content-between">[
+            <a href="#">"datagirlcmr@gmail.com",</a>
+            <a href="https://www.linkedin.com/in/selma-ndi/">"LinkedIn"</a>
+            <a href="https://github.com/Datagirlcmr">"GitHub"</a>
+            <a href="https://twitter.com/SelmaNdi">"Twitter"</a>
+            ]
+          </p>
+        </div>
+        <div>
+          > Selma.education
+          <p class="text-wamicroverse websiterning">"Full Stack Web Developer - Microverse"</p>
+          <p class="text-warning">"MBA.Management - The ICT University"</p>
+        </div>
+        <div>
+          > Selmtext-center mt-3a.skills
+          <p class="text-warning">[" HTML " , " CSS " , " Bootstrap " , 
+            "JavaScript" , " Ruby " ,  " Ruby on Rails " , " React " , " git "]</p>
+        </div>
+        <div>
+          > Selma.hobbies
+          <p class="text-warning">["design", "gaming", "Movies", "Reading"]</p>
+        </div>
+        <div class="d-flex">
+          >  
+          <div id="blinky"></div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+    
 
 <!--Projects-->    
     <section class="mt-5">
@@ -88,7 +118,7 @@
 
       <div class=" jumbotron col-md-10 m-auto d-flex bg-white">
         <div class="col-md-6 d-none d-sm-block">
-          <img class="image-fluid" src="./images/microverse.png" alt="microverse website">
+          <img class="image-fluid project" src="./images/microverse.png" alt="microverse website">
         </div>
         <div class="col-md-5 m-auto col-xs-10 col-sm-12">
           <h2 class="text-secondary">Microverse</h2>
@@ -118,7 +148,7 @@
 
       <div class=" jumbotron col-md-10 m-auto d-flex bg-white">
         <div class="col-md-6 d-none d-sm-block">
-          <img class="image-fluid" src="./images/tictac.png" alt="microverse website">
+          <img class="image-fluid project" src="./images/tictac.png" alt="microverse website">
         </div>
         <div class="col-md-5 m-auto col-xs-10 col-sm-12">
           <h2 class="text-secondary">Tic Tac Toe</h2>
@@ -145,7 +175,7 @@
 
       <div class=" jumbotron col-md-10 m-auto d-flex bg-white">
         <div class="col-md-6 d-none d-sm-block">
-          <img class="image-fluid" src="./images/weatherapp.png" alt="microverse website">
+          <img class="image-fluid project" src="./images/weatherapp.png" alt="microverse website">
         </div>
         <div class="col-md-6 m-auto col-xs-10 col-sm-12 ">
           <h2 class="text-secondary">Weatherapp</h2>
@@ -174,7 +204,7 @@
 
       <div class=" jumbotron col-md-10 m-auto d-flex bg-white">
         <div class="col-md-6 d-none d-sm-block">
-          <img class="image-fluid" src="./images/swedex.png" alt="modelling website">
+          <img class="image-fluid project" src="./images/swedex.png" alt="modelling website">
         </div>
         <div class="col-md-6 m-auto col-xs-10 col-sm-12">
           <h2 class="text-secondary">Swedex Models</h2>
@@ -203,7 +233,7 @@
 
       <div class=" jumbotron col-md-10 m-auto d-flex bg-white">
         <div class="col-md-6 d-none d-sm-block">
-          <img class="image-fluid" src="./images/dogstore.png" alt="dog site">
+          <img class="image-fluid project" src="./images/dogstore.png" alt="dog site">
         </div>
         <div class="col-md-6 m-auto col-xs-10 col-sm-12">
           <h2 class="text-secondary">Dog Breeds</h2>
