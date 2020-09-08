@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="./main.js"></script>
 </head>
-<body>
+<body class="bg-light">
   <!--navbar-->
     <nav class="navbar navbar-expand bg-dark">
       <ul class="navbar-nav ml-auto"> 
@@ -48,61 +48,59 @@
   <section class="mt-5">
     <a id="about"></a>
     <div>
-      <h1 class="text-center text-secondary border-bottom">About</h1>
+      <h1 class="text-center text-secondary border-bottom">ABOUT</h1>
     </div>
     <div class="container"> 
-      <div class="row">
-        <div class="col-md-5">
+      <div class="row m-5">
+        <div class="col-10 d-flex">
           <img class="image-fluid main-pic d-none d-sm-block" src="./images/linkedin.jpeg" alt="selma-ndi">
-         <p class= "font-weight-bold text-secondary"> I am an Award-winning full-stack web developer (& M.B.A.) with an accountant’s eye, an administrator’s voice, and a developer’s mind.
+          <p class="text-center ml-3 pt-5 mt-5 about-me"> I am an Award-winning full-stack web developer (& M.B.A.) with an accountant’s eye, an administrator’s voice, and a developer’s mind.
            A get-it-done and get-it-done-well kind of woman.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="image-fluid" src="./images/about.png" alt="skills">
-        </div>
-        
+        </div>  
       </div>
     </div>
   </section>
 
-  <div class="container">
-    <div class="">
+  <div class="container-fluid bg-dark">
       
-      <div class = "jumbotron bg-dark text-secondary col-md-10 m-auto">
-        <div>
-          > Selma.currentLocation
-          <p class="text-warning">Bamenda, Cameroon</p>
-        </div>
-        <div>
-          > Selma.contactInfo <br>
-          <p class=" col-md-6 d-flex justify-content-between">[
-            <a href="#">"datagirlcmr@gmail.com",</a>
-            <a href="https://www.linkedin.com/in/selma-ndi/">"LinkedIn"</a>
-            <a href="https://github.com/Datagirlcmr">"GitHub"</a>
-            <a href="https://twitter.com/SelmaNdi">"Twitter"</a>
-            ]
-          </p>
-        </div>
-        <div>
-          > Selma.education
-          <p class="text-wamicroverse websiterning">"Full Stack Web Developer - Microverse"</p>
-          <p class="text-warning">"MBA.Management - The ICT University"</p>
-        </div>
-        <div>
-          > Selmtext-center mt-3a.skills
-          <p class="text-warning">[" HTML " , " CSS " , " Bootstrap " , 
-            "JavaScript" , " Ruby " ,  " Ruby on Rails " , " React " , " git "]</p>
-        </div>
-        <div>
-          > Selma.hobbies
-          <p class="text-warning">["design", "gaming", "Movies", "Reading"]</p>
-        </div>
-        <div class="d-flex">
-          >  
-          <div id="blinky"></div>
-        </div>
+    <div class = "col-10 m-auto p-3 text-center">
+      <div class="col-10">
+        <h3 class="text-white"> > Selma.currentLocation </h3>
+        <h4 class="text-secondary">Bamenda, Cameroon</h4>
       </div>
 
+      <div class="col-10">
+        <h3 class="text-white"> > Selma.contactInfo </h3>
+        <h4 class="text-secondary">[
+            <a  class="text-secondary" target="_blank" href="mailto: datagirlcmr@gmail.com">" Email ",</a>
+            <a class="text-secondary" href="https://www.linkedin.com/in/selma-ndi/">" LinkedIn "</a>
+            <a class="text-secondary" href="https://github.com/Datagirlcmr">" GitHub "</a>
+            <a  class="text-secondary" href="https://twitter.com/SelmaNdi">" Twitter "</a>
+            ]
+        </h4>
+      </div>
+
+      <div class="col-10">
+        <h3 class="text-white"> > Selma.education </h3>
+        <h4 class="text-secondary">"Full Stack Web Developer - Microverse"</h4>
+        <h4 class="text-secondary">"MBA.Management - The ICT University"</h4>
+      </div>
+
+  
+      <div class="col-10">
+        <h3 class="text-white"> > Selma.skills </h3>
+        <h4 class="text-secondary">[" HTML " , " CSS " , " Bootstrap " , 
+            "JavaScript" , " Ruby " ,  " Ruby on Rails " , " React " , " git "]</h4>
+      </div>
+      <div class="col-10">
+        <h3 class="text-white"> > Selma.hobbies </h3>
+        <h4 class="text-secondary">["design", "gaming", "Movies", "Reading"]</h4>
+      </div>
+  
+      <div class="text-center">
+        >  
+        <div class="text-center" id="blinky"></div>
+      </div>
     </div>
 
   </div>
@@ -113,7 +111,34 @@
     <section class="mt-5">
       <a id="projects"></a>
       <div>
-        <h1 class="text-center text-secondary border-bottom">Projects</h1>
+        <h1 class="text-center text-secondary border-bottom">PROJECTS</h1>
+      </div>
+
+      <div class=" jumbotron col-md-10 m-auto d-flex bg-white">
+        <div class="col-md-6 d-none d-sm-block">
+          <img class="image-fluid project" src="./images/steps.png" alt="steps-tracker">
+        </div>
+        <div class="col-md-5 m-auto col-xs-10 col-sm-12">
+          <h2 class="text-secondary">Steps App </h2>
+          <p class="text-secondary">This is a single page application built with react, redux, and rails. 
+            The app provides a platform where users can track their steps simply by inputting the steps taken each day.
+          </p>
+          <p class="tools">
+            <span>Ruby</span>
+            <span>Rails</span>
+            <span>React</span>
+            <span>Bootstrap</span>
+          </p>
+          <p class="d-flex">
+            <a class="linky p-3 rounded mr-2" href="https://steps-tracker.herokuapp.com/">
+              Live Demo 
+              <img class="icons" src="./images/icons8-open-in-popup-30.png" alt="">
+            </a>
+            <a class="whity p-3 rounded ml-2" href="https://github.com/Datagirlcmr/steps-tracker">
+            <img class="icons" src="./images/icons8-github-30.png" alt=""> View Source
+          </a>
+          </p>
+        </div>
       </div>
 
       <div class=" jumbotron col-md-10 m-auto d-flex bg-white">
@@ -262,7 +287,7 @@
 
 <!--Blog-->    
     <section>
-      <h1 class="text-center text-secondary border-bottom pb-5">Blog</h1>
+      <h1 class="text-center text-secondary border-bottom pb-5">ARTICLES</h1>
       <a id="blog"></a>
       <div class="d-flex flex-column flex-sm-row">
         <div class="col-md-5 col-xs-10 m-auto jumbotron">
@@ -286,6 +311,30 @@
              values evaluate to false in Ruby... <a href="https://hackernoon.com/understanding-boolean-methods-in-ruby-with-examples-363n36nu">continue reading</a></p>
         </div>
       </div>
+
+      <div class="d-flex flex-column flex-sm-row">
+        <div class="col-md-5 col-xs-10 m-auto jumbotron">
+          <h2 class="text-center">The Amazing React Router</h2>
+          <p class="text-secondary text-center"> Usually, when you load up a website, most of the pages like the about page, 
+            the contact page have to fetch data from the server before rendering. With React, and React Router, 
+            everything becomes simplified because only a specific component loads up. In single-page apps, 
+            there is only a single HTML page.
+             we are reusing the same HTML page to render the different components based on the navigation.
+            <a href="https://hackernoon.com/the-amazing-react-router-xf133uek">Continue Reading</a> 
+          </p>
+        </div>
+        <!-- <div class="col-md-5 col-sm-10 m-auto jumbotron">
+          <h2 class="text-center">Understanding Boolean Methods in Ruby With Examples</h2>
+          <p class="text-secondary text-center">Most programming languages have a Data Type called “Boolean”. This is
+            a form of data with only two possible values (usually “true” and
+            “false”). The Ruby language however does not have a Boolean Data
+            Type.
+            Ruby has Boolean Methods, otherwise called Predicates or Query. 
+            These are methods that end with a question mark (?) . 
+            It will be worth noting that only "false" and "nil"
+             values evaluate to false in Ruby... <a href="https://hackernoon.com/understanding-boolean-methods-in-ruby-with-examples-363n36nu">continue reading</a></p>
+        </div> -->
+      </div>
       
 
     </section>
@@ -294,10 +343,10 @@
     <footer class="justify-content-center col-md-10 m-auto">
       <a id="contact"></a>
       <div class="">
-        <h1 class="text-center text-secondary pt-5">Contact Me!</h1>
+        <h1 class="text-center text-secondary pt-5">CONTACT ME</h1>
       </div>
       <h3 class="d-flex flex-column flex-sm-row justify-content-center  mt-5">
-        <a class="mr-3 d-md-block" rel="noopener" target="_blank" href="mailto:datagirlcmr@gmail.com">datagirlcmr@gmail.com</a>  || 
+        <a class="mr-3 d-md-block text-primary" rel="noopener" target="_blank" href="mailto:datagirlcmr@gmail.com">Email</a>  || 
         <a class="mr-3 ml-3 d-md-block" href="https://github.com/Datagirlcmr">GitHub </a>||
         <a class="mr-3 ml-3 d-md-block" href="https://www.linkedin.com/in/selma-ndi/">LinkedIn</a> ||
         <a class="mr-3 ml-3 d-md-block" href="https://twitter.com/SelmaNdi">Twitter</a>
