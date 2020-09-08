@@ -8,30 +8,33 @@
     <!-- Bootstrap CSS file -->
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-   
+    <script src="./main.js"></script>
 </head>
 <body class="mb-5">
   <!--navbar-->
-    <nav class="navbar navbar-expand-sm bg-light">
-      <ul class="navbar-nav d-flex justify-content-end col-md-10 m-auto fonty"> 
+    <nav class="navbar navbar-expand-sm bg-dark justify-content-end">
+      <ul class="navbar-nav"> 
         <li class="nav-item">
-        <a class="nav-link mr-3" href="#projects">Projects</a>
+          <a class="nav-link mr-3 hover-change" href="#about">About</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link mr-3" href="#blog">Blog</a>
+          <a class="nav-link mr-3 hover-change" href="#projects">Projects</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link" href="#contact">Contact</a>
+         <a class="nav-link mr-3 hover-change" href="#blog">Articles</a>
         </li>
-     </ul>
+        <li class="nav-item">
+          <a class="nav-link hover-change" href="#contact">Contact</a>
+        </li>
+      </ul>
     </nav>
 
   <!--Basic Information-->
-    <div class = "jumbotron bg-light">
+    <div class = "jumbotron bg-dark">
       <div class="m-auto col-md-10">
-        <div class="d-flex col-xs-12">
-          <div class="text-primary namy mr-2"> >  Selma Ndi </div>
-          <div id="blink"></div>
+        <div class="d-flex flex-column col-xs-12">
+          <div class="text-white font-weight-bold name-title mr-2"> >  Selma Ndi </div>
+          <div class="text-danger font-weight-bold blink" id="blink"></div>
         </div>
         <br> <br>
         <p class= "text-secondary"> I am a <span class="text-danger font-weight-bold">self-taught</span> freelance web developer. My passion is building simple, beautiful user experiences.</p>

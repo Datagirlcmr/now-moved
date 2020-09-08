@@ -3,32 +3,9 @@ body {
   font-size: 30px;
 }
 
-.fonty {
-  font-size: x-large;
-}
-
-.namy {
+.name-title {
   font-size: 80px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-#blink {
-  width: 40px;
-  height: 100px;
-  margin-left: 5px;
-  background-color: #007bff;
-  animation-name: blink;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes blink {
-  from {
-    background-color: #007bff;
-  }
-  to {
-    background-color: transparent;
-  }
 }
 
 #blinky {
@@ -76,11 +53,36 @@ img {
   color: #fff;
 }
 
-.whity {
+/* .whity {
   color: #747fe0;
   background: whitesmoke;
 }
 
 .projecta {
   background: whitesmoke;
+} */
+
+a:link {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.hover-change:hover {
+  text-decoration: none;
+  color: #dc3545;
+}
+
+/* .main-color {
+  color: #004c72;
+}
+
+.second-color {
+  color: #8b0000
+} */
+
+.blink {
+  font-size: 20px;
+  
 }
