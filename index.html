@@ -10,36 +10,41 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="./main.js"></script>
 </head>
+
 <body class="bg-light">
   <!--navbar-->
-    <nav class="navbar navbar-expand bg-dark">
-      <ul class="navbar-nav ml-auto"> 
-        <li class="nav-item">
-          <a class="nav-link  d-none d-sm-block text-white font-weight-bolder" href="#about">ABOUT</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white font-weight-bolder" href="#projects">PROJECTS</a>
-        </li>
-        <li class="nav-item">
-         <a class="nav-link text-white font-weight-bolder" href="#blog">ARTICLES </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white font-weight-bolder" href="#contact">CONTACT ME</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand bg-dark">
+        <ul class="navbar-nav ml-auto"> 
+          <li class="nav-item">
+            <a class="nav-link d-none d-sm-block text-white font-weight-bolder" href="#about">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white font-weight-bolder" href="#projects">PROJECTS</a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link text-white font-weight-bolder" href="#blog">ARTICLES </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white font-weight-bolder" href="#contact">CONTACT ME</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
   <!--Basic Information-->
-    <div class = "jumbotron bg-dark d-flex">
-      <div class="m-auto col-md-6">
-        <div class="d-flex flex-column col-xs-12">
-          <div class="text-white font-weight-bold name-title mr-2"> >  Selma Ndi </div>
-          <div class="text-danger font-weight-bold blink" id="blink"></div>
+    <div class="container-fluid">
+      <div class="jumbotron bg-dark">
+        <div class="col-12">
+          <div class="d-flex flex-column">
+            <div class="text-white font-weight-bold name-title "> >  Selma Ndi </div>
+            <div class="text-danger font-weight-bold blink" id="blink"></div>
+          </div>
+          <br> <br>
+          <p class= "text-secondary blink">
+            Check out some of my <a class="blink text-white" href="#projects">projects</a>
+          </p>
         </div>
-        <br> <br>
-        <p class= "text-secondary blink">
-          Check out some of my <a class="blink text-white" href="#projects">projects</a>
-        </p>
       </div>
     </div>
 
@@ -51,67 +56,53 @@
       <h1 class="text-center text-secondary border-bottom font-weight-bolder fading">ABOUT</h1>
     </div>
 
-    <div class="container-fluid"> 
-      <div class="row mt-5">
-        <div class="col-12 col-sm-5 anim1 "> 
-          <div class="col-10">
-            <img class="image-fluid main-pic" src="./images/linkedin.jpeg" alt="selma-ndi">
-          </div>
-          <div class="col-10 d-flex flex-column justify-content-center">
-            <p class="pt-3 blink text-center"> I am an Award-winning full-stack web developer (& M.B.A.) with an accountant’s eye, an administrator’s voice, and a developer’s mind.
-              A get-it-done and get-it-done-well kind of woman.</p>
-              <p class= "text-secondary blink text-center">
-                Check out my <a class="blink" target="_blank" href="https://docs.google.com/document/d/1T-oj7EtC7HGLT8s2nXODzL9TPZ2CxEhrtr85xL-uoDU/edit?usp=sharing">Resume</a>
-              </p>
-          </div> 
-        </div>
-        <div class="col-12 col-sm-6">
-          <div class="container bg-dark">
-      
-            <div class = "col-10 m-auto p-3 text-center">
-
-              <div class="col-10 pb-3">
-                <h4 class="text-white"> > Selma.skills </h4>
-                <h6 class="text-danger" id="skills"></h6>
-              </div>
-
-              <div class="col-10 p-3">
-                <h4 class="text-white"> > Selma.currentLocation </h4>
-                <h6 class="text-danger">Bamenda, Cameroon</h6>
-              </div>
-        
-              <div class="col-10 pb-3">
-                <h4 class="text-white"> > Selma.contactInfo </h4>
-                <h6 class="text-secondary">[
-                    <a  class="text-danger" target="_blank" href="mailto: datagirlcmr@gmail.com">" datagirlcmr@gmail.com ",</a>
-                    <a class="text-danger" target="_blank" href="https://www.linkedin.com/in/selma-ndi/">" LinkedIn ",</a>
-                    <a class="text-danger" target="_blank" href="https://github.com/Datagirlcmr">" GitHub ",</a>
-                    <a  class="text-danger" target="_blank" href="https://twitter.com/SelmaNdi">" Twitter "</a>
-                    ]
-                </h6>
-              </div>
-        
-              <div class="col-10 pb-3">
-                <h4 class="text-white"> > Selma.education </h4>
-                <h6 class="text-danger">"Full Stack Web Developer - Microverse"</h6> 
-                <h6 class="text-secondary">"MBA.Management - The ICT University"</h6>
-              </div>
-        
-              <div class="col-10">
-                <h4 class="text-white"> > Selma.hobbies </h4>
-                <h6 class="text-secondary">["design", "gaming", "Movies", "Reading"]</h6>
-              </div>
-          
-              <div class="text-center">
-                >  
-                <div class="text-center" id="blinky"></div>
-              </div>
-            </div>
-        
-          </div>
+    <div class="jumbotron col-11 m-auto d-sm-flex bg-white">
+      <div class="col-12 col-md-6 d-sm-block ">
+        <img class="image-fluid main-pic" src="./images/linkedin.jpeg" alt="selma-ndi">
+        <p class="pt-3 blink text-center"> I am an Award-winning full-stack web developer (& M.B.A.) with an accountant’s eye, an administrator’s voice, and a developer’s mind.
+          A get-it-done and get-it-done-well kind of woman.</p>
+          <p class= "text-secondary blink text-center">
+            Check out my <a class="blink" target="_blank" href="https://docs.google.com/document/d/1T-oj7EtC7HGLT8s2nXODzL9TPZ2CxEhrtr85xL-uoDU/edit?usp=sharing">Resume</a>
+          </p>
+      </div>
+      <div class="col-11 col-md-5 m-auto bg-dark">
+        <div class="col-10 pb-3">
+          <h4 class="text-white"> > Selma.skills </h4>
+          <h6 class="text-danger" id="skills"></h6>
         </div>
 
-         
+        <div class="col-10 p-3">
+          <h4 class="text-white"> > Selma.currentLocation </h4>
+          <h6 class="text-danger">Bamenda, Cameroon</h6>
+        </div>
+  
+        <div class="col-10 pb-3">
+          <h4 class="text-white"> > Selma.contactInfo </h4>
+          <h6 class="text-secondary">[
+              <a  class="text-danger" target="_blank" href="mailto: datagirlcmr@gmail.com">" datagirlcmr@gmail.com ",</a>
+              <a class="text-danger" target="_blank" href="https://www.linkedin.com/in/selma-ndi/">" LinkedIn ",</a>
+              <a class="text-danger" target="_blank" href="https://github.com/Datagirlcmr">" GitHub ",</a>
+              <a  class="text-danger" target="_blank" href="https://twitter.com/SelmaNdi">" Twitter "</a>
+              ]
+          </h6>
+        </div>
+  
+        <div class="col-10 pb-3">
+          <h4 class="text-white"> > Selma.education </h4>
+          <h6 class="text-danger">"Full Stack Web Developer - Microverse"</h6> 
+          <h6 class="text-secondary">"MBA.Management - The ICT University"</h6>
+        </div>
+  
+        <div class="col-10">
+          <h4 class="text-white"> > Selma.hobbies </h4>
+          <h6 class="text-secondary">["design", "gaming", "Movies", "Reading"]</h6>
+        </div>
+    
+        <div class="text-center">
+          >  
+          <div class="text-center" id="blinky"></div>
+        </div>
+        
       </div>
     </div>
     
@@ -123,10 +114,10 @@
     <section class="mt-5">
       <a id="projects"></a>
       <div>
-        <h1 class="text-center text-secondary border-bottom fading">PROJECTS</h1>
+        <h1 class="text-center text-secondary border-bottom font-weight-bolder fading">PROJECTS</h1>
       </div>
 
-      <div class="jumbotron col-md-10 m-auto d-sm-flex bg-white">
+      <div class="jumbotron col-11 m-auto d-sm-flex bg-white">
         <div class="col-12 col-md-6 d-sm-block ">
           <img class="image-fluid project" src="./images/steps.png" alt="steps-tracker">
         </div>
@@ -142,18 +133,18 @@
             <span>Bootstrap</span>
           </p>
           <p class="d-flex">
-            <a class="linky p-3 rounded mr-2" href="https://steps-tracker.herokuapp.com/">
+            <a class="linky p-3 rounded " href="https://steps-tracker.herokuapp.com/">
               Live Demo 
               <img class="icons" src="./images/icons8-open-in-popup-30.png" alt="">
             </a>
-            <a class="whity p-3 rounded ml-2" href="https://github.com/Datagirlcmr/steps-tracker">
+            <a class="whity p-3 rounded " href="https://github.com/Datagirlcmr/steps-tracker">
             <img class="icons" src="./images/icons8-github-30.png" alt=""> View Source
           </a>
           </p>
         </div>
       </div>
 
-      <div class=" jumbotron col-md-10 m-auto d-sm-flex bg-white">
+      <div class=" jumbotron col-11 m-auto d-sm-flex bg-white">
         <div class="col-12 col-md-6 d-sm-block ">
           <img class="image-fluid project" src="./images/microverse.png" alt="microverse website">
         </div>
@@ -170,11 +161,11 @@
             <span>Bootstrap</span>
           </p>
           <p class="d-flex">
-            <a class="linky p-3 rounded mr-2" href="https://rawcdn.githack.com/Datagirlcmr/Grid-Based-Framework/fc3b8b29238caae65c455421945806fafeeb0f03/index.html">
+            <a class="linky p-3 rounded " href="https://rawcdn.githack.com/Datagirlcmr/Grid-Based-Framework/fc3b8b29238caae65c455421945806fafeeb0f03/index.html">
               Live Demo
               <img class="icons" src="./images/icons8-open-in-popup-30.png" alt="">
             </a>
-            <a class="whity p-3 rounded ml-2" href="https://github.com/Datagirlcmr/Grid-Based-Framework">
+            <a class="whity p-3 rounded " href="https://github.com/Datagirlcmr/Grid-Based-Framework">
             <img class="icons" src="./images/icons8-github-30.png" alt=""> View Source
           </a>
           </p>
@@ -182,7 +173,7 @@
       </div>
 
 
-      <div class=" jumbotron col-md-10 m-auto d-sm-flex bg-white">
+      <div class=" jumbotron col-11 m-auto d-sm-flex bg-white">
         <div class="col-12 col-md-6 d-sm-block ">
           <img class="image-fluid project" src="./images/tictac.png" alt="microverse website">
         </div>
@@ -197,18 +188,18 @@
             <span>Bootstrap</span>
           </p>
           <p class="d-flex">
-            <a class="linky p-3 rounded mr-2" href="https://datagirlcmr.github.io/Game-Tic-Tac-Toe-/">
+            <a class="linky p-3 rounded " href="https://datagirlcmr.github.io/Game-Tic-Tac-Toe-/">
               Live Demo 
               <img class="icons" src="./images/icons8-open-in-popup-30.png" alt="">
             </a>
-            <a class="whity p-3 rounded ml-2" href="https://github.com/Datagirlcmr/Game-Tic-Tac-Toe-/">
+            <a class="whity p-3 rounded " href="https://github.com/Datagirlcmr/Game-Tic-Tac-Toe-/">
             <img class="icons" src="./images/icons8-github-30.png" alt=""> View Source
           </a>
           </p>
         </div>
       </div>
 
-      <div class=" jumbotron col-md-10 m-auto d-sm-flex bg-white">
+      <div class=" jumbotron col-11 m-auto d-sm-flex bg-white">
         <div class="col-12 col-md-6 d-sm-block ">
           <img class="image-fluid project" src="./images/weatherapp.png" alt="microverse website">
         </div>
@@ -224,18 +215,18 @@
             <span>Webpack</span>
           </p>
           <p class="d-flex">
-            <a class="linky p-3 rounded mr-2" href="https://datagirlcmr.github.io/Weather-App">
+            <a class="linky p-3 rounded " href="https://datagirlcmr.github.io/Weather-App">
               Live Demo 
               <img class="icons" src="./images/icons8-open-in-popup-30.png" alt="">
             </a>
-            <a class="whity p-3 rounded ml-2" href="https://github.com/Datagirlcmr/Weather-App">
+            <a class="whity p-3 rounded " href="https://github.com/Datagirlcmr/Weather-App">
             <img class="icons" src="./images/icons8-github-30.png" alt=""> View Source
           </a>
           </p>
         </div>
       </div>
 
-      <div class=" jumbotron col-md-10 m-auto d-sm-flex bg-white">
+      <div class=" jumbotron col-11 m-auto d-sm-flex bg-white">
         <div class="col-12 col-md-6 d-sm-block ">
           <img class="image-fluid project" src="./images/swedex.png" alt="modelling website">
         </div>
@@ -251,18 +242,18 @@
             <span>Wordpress</span>
           </p>
           <p class="d-flex">
-            <a class="linky p-3 rounded mr-2" href="https://swedexmodels.org/">
+            <a class="linky p-3 rounded " href="https://swedexmodels.org/">
               Live Demo 
               <img class="icons" src="./images/icons8-open-in-popup-30.png" alt="">
             </a>
-            <a class="whity p-3 rounded ml-2" href="#">
+            <a class="whity p-3 rounded " href="#">
             <img class="icons" src="./images/icons8-github-30.png" alt=""> View Source
           </a>
           </p>
         </div>
       </div>
 
-      <div class=" jumbotron col-md-10 m-auto d-sm-flex bg-white">
+      <div class=" jumbotron col-11 m-auto d-sm-flex bg-white">
         <div class="col-12 col-md-6 d-sm-block ">
           <img class="image-fluid project" src="./images/dogstore.png" alt="dog site">
         </div>
@@ -279,11 +270,11 @@
             
           </p>
           <p class="d-flex">
-            <a class="linky p-3 rounded mr-2" href="https://dogstorebreed.herokuapp.com/">
+            <a class="linky p-3 rounded " href="https://dogstorebreed.herokuapp.com/">
               Live Demo 
               <img class="icons" src="./images/icons8-open-in-popup-30.png" alt="">
             </a>
-            <a class="whity p-3 rounded ml-2" href="https://github.com/Datagirlcmr/dogstore">
+            <a class="whity p-3 rounded " href="https://github.com/Datagirlcmr/dogstore">
             <img class="icons" src="./images/icons8-github-30.png" alt=""> View Source
           </a>
           </p>
@@ -293,10 +284,11 @@
 
 <!--Blog-->    
     <section>
-      <h1 class="text-center text-secondary border-bottom pb-5 fading">ARTICLES</h1>
+      <h1 class="text-center text-secondary border-bottom font-weight-bolder pb-5 fading">ARTICLES</h1>
       <a id="blog"></a>
-      <div class="d-flex flex-column flex-sm-row">
-        <div class="col-md-5 col-xs-10 m-auto jumbotron">
+
+      <div class="col-11 m-auto d-sm-flex bg-white">
+        <div class="col-12 col-md-6 d-sm-block jumbotron">
           <h2 class="text-center">One Month at Microverse</h2>
           <p class="text-secondary text-center"> And you say learning to code is hard…You say code is not a woman’s  thing…
             You even imply that women are lazy when it comes to tech commitment okay,
@@ -305,7 +297,7 @@
             <a href="https://hackernoon.com/one-month-at-microverse-je5d37k1">Continue Reading</a> 
           </p>
         </div>
-        <div class="col-md-5 col-sm-10 m-auto jumbotron">
+        <div class="col-12 col-md-5 m-auto ">
           <h2 class="text-center">Understanding Boolean Methods in Ruby With Examples</h2>
           <p class="text-secondary text-center">Most programming languages have a Data Type called “Boolean”. This is
             a form of data with only two possible values (usually “true” and
@@ -341,10 +333,10 @@
         <h1 class="text-center text-secondary pt-5 fading">CONTACT ME</h1>
       </div>
       <h4 class="d-flex flex-column flex-sm-row justify-content-center  mt-5">
-        <a class="mr-3 d-md-block text-primary" rel="noopener" target="_blank" href="mailto:datagirlcmr@gmail.com">Email</a>  || 
-        <a class="mr-3 ml-3 d-md-block" target="_blank" href="https://github.com/Datagirlcmr">GitHub </a>||
-        <a class="mr-3 ml-3 d-md-block" target="_blank" href="https://www.linkedin.com/in/selma-ndi/">LinkedIn</a> ||
-        <a class="mr-3 ml-3 d-md-block" target="_blank" href="https://twitter.com/SelmaNdi">Twitter</a>
+        <a class=" d-md-block text-primary" rel="noopener" target="_blank" href="mailto:datagirlcmr@gmail.com">Email</a>  || 
+        <a class="  d-md-block" target="_blank" href="https://github.com/Datagirlcmr">GitHub </a>||
+        <a class="  d-md-block" target="_blank" href="https://www.linkedin.com/in/selma-ndi/">LinkedIn</a> ||
+        <a class="  d-md-block" target="_blank" href="https://twitter.com/SelmaNdi">Twitter</a>
       </h4>
     </footer>
 
