@@ -135,9 +135,3 @@ h4:hover {
     );
   }
 }
-
-@media (min-width: 576px) and (max-width: 768px) {
-  nav {
-    width: 100%;
-  }
-}
