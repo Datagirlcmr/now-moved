@@ -8,7 +8,9 @@
     <!-- Bootstrap CSS file -->
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a980957128.js" crossorigin="anonymous"></script>
     <script src="./main.js"></script>
+    
 </head>
 
 <body class="bg-light">
@@ -22,7 +24,153 @@
           <a class="nav-link text-white font-weight-bolder" href="#projects">PROJECTS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white font-weight-bolder" href="#blog">ARTICLES </a>
+          <a class="nav-link text-white html, body, div, span, applet, object, iframe,
+          h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+          a, abbr, acronym, address, big, cite, code,
+          del, dfn, em, img, ins, kbd, q, s, samp,
+          small, strike, strong, sub, sup, tt, var,
+          b, u, i, center,
+          dl, dt, dd, ol, ul, li,
+          fieldset, form, label, legend,
+          table, caption, tbody, tfoot, thead, tr, th, td,
+          article, aside, canvas, details, embed, 
+          figure, figcaption, footer, header, hgroup, 
+          menu, nav, output, ruby, section, summary,
+          time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+          }
+          
+          .name-title {
+            font-size: 80px;
+            font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+          }
+          
+          .nav-link:hover {
+            color: #dc3545 !important;
+          }
+          
+          h4 {
+            font-size: 12px;
+            transition: font-size 2s;
+          }
+          
+          h4:hover {
+            font-size: 15px;
+          }
+          
+          .fading {
+            font-size: 32px;
+            transition: font-size 2s;
+          }
+          
+          .fading:hover {
+            font-size: 50px;
+          }
+          
+          #blinky {
+            width: 10px;
+            height: 25px;
+            margin-left: 5px;
+            background-color: rgb(102, 99, 99);
+            animation: blinky 1s infinite;
+          }
+          
+          @keyframes blinky {
+            from {
+              background-color: rgb(102, 99, 99);
+            }
+            to {
+              background-color: transparent;
+            }
+          }
+          
+          .main-pic {
+            border-radius: 100%;
+            padding: 5px;
+            width: 250px;
+          } /* Some padding */
+          
+          .main-pic:hover {
+            box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+            width: 350px;
+          }
+          
+          .project {
+            width: 100%;
+            height: 100%;
+            transition: width 2s;
+            clip-path: polygon(100% 0%, 64% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+            position: relative;
+            animation-name: pictures;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+          }
+          
+          @keyframes pictures {
+            0% {left: -1000px;}
+            100% {left: 0px;}
+          }
+          
+          .project:hover {
+            width: 110%;
+          }
+          
+          .tools span {
+            border-radius: 4px;
+            border: 2px solid #92eac0;
+            padding: 8px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+            font-size: 0.85em;
+            color: #525f7f;
+            width: 110%;
+          }
+          
+          .linky {
+            background: #747fe0;
+            color: #fff;
+          }
+          
+          .blink {
+            font-size: 20px;
+          }
+          
+          .anim1 {
+            animation: mainpic 1.5s ease-out 0s alternate infinite none running;
+          }
+          
+          @keyframes mainpic {
+            from {
+              left: 0px;
+            }
+            to {
+              left: 100px;
+            }
+          }
+          
+          @media screen and (max-width: 750px) {
+            .project {
+              width: 100%;
+              height: 100%;
+              clip-path: polygon(
+                20% 0%,
+                80% 0%,
+                100% 20%,
+                100% 80%,
+                80% 100%,
+                20% 100%,
+                0% 80%,
+                0% 20%
+              );
+            }
+          }
+          font-weight-bolder" href="#blog">ARTICLES </a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-white font-weight-bolder" href="#contact">CONTACT</a>
@@ -55,43 +203,43 @@
     <div class="jumbotron col-11 m-auto d-sm-flex bg-white">
       <div class="col-12 col-md-6 d-sm-block">
         <img class="image-fluid main-pic" src="./images/linkedin.jpeg" alt="selma-ndi">
-        <p class="pt-3 blink text-center lead"> I am an Award-winning full-stack web developer (& M.B.A.) with an accountant’s eye, an administrator’s voice, and a developer’s mind.
+        <p class="pt-3 blink text-center lead text-secondary"> I am an Award-winning full-stack web developer (& M.B.A.) with an accountant’s eye, an administrator’s voice, and a developer’s mind.
           A get-it-done and get-it-done-well kind of woman.</p>
           <p class= "text-secondary blink text-center">
-            Check out my <a class="blink" target="_blank" href="https://docs.google.com/document/d/1T-oj7EtC7HGLT8s2nXODzL9TPZ2CxEhrtr85xL-uoDU/edit?usp=sharing">Resume</a>
+            Check out my <a class="blink text-danger" target="_blank" href="https://docs.google.com/document/d/1T-oj7EtC7HGLT8s2nXODzL9TPZ2CxEhrtr85xL-uoDU/edit?usp=sharing">Resume</a>
           </p>
       </div>
       <div class="col-11 col-md-5 m-auto bg-dark">
         <div class="col-10 pb-3">
-          <h4 class="text-white"> > Selma.skills </h4>
-          <h6 class="text-danger" id="skills"></h6>
+          <h4 class="text-danger"> > Selma.skills </h4>
+          <h5 class="text-white" id="">[ HTML, CSS ,  Bootstrap  , JavaScript ,  Ruby  ,  Ruby on Rails  ,  React  , Redux,  git ]</h5>
         </div>
 
         <div class="col-10 p-3">
-          <h4 class="text-white"> > Selma.currentLocation </h4>
-          <h6 class="text-danger">Bamenda, Cameroon</h6>
+          <h4 class="text-danger"> > Selma.location </h4>
+          <h5 class="text-white">Bamenda, Cameroon</h5>
         </div>
   
         <div class="col-10 pb-3">
-          <h4 class="text-white"> > Selma.contactInfo </h4>
-          <h6 class="text-secondary">[
-              <a  class="text-danger" target="_blank" href="mailto: datagirlcmr@gmail.com">" datagirlcmr@gmail.com ",</a>
-              <a class="text-danger" target="_blank" href="https://www.linkedin.com/in/selma-ndi/">" LinkedIn ",</a>
-              <a class="text-danger" target="_blank" href="https://github.com/Datagirlcmr">" GitHub ",</a>
-              <a  class="text-danger" target="_blank" href="https://twitter.com/SelmaNdi">" Twitter "</a>
+          <h4 class="text-danger"> > Selma.contact </h4>
+          <h6 class="text-white">[
+              <a  class="text-white" target="_blank" href="mailto: datagirlcmr@gmail.com"> datagirlcmr@gmail.com,</a>
+              <a class="text-white" target="_blank" href="https://www.linkedin.com/in/selma-ndi/">LinkedIn,</a>
+              <a class="text-white" target="_blank" href="https://github.com/Datagirlcmr">GitHub , </a>
+              <a  class="text-white" target="_blank" href="https://twitter.com/SelmaNdi"> Twitter </a>
               ]
           </h6>
         </div>
   
         <div class="col-10 pb-3">
-          <h4 class="text-white"> > Selma.education </h4>
-          <h6 class="text-danger">"Full Stack Web Developer - Microverse"</h6> 
-          <h6 class="text-secondary">"MBA.Management - The ICT University"</h6>
+          <h4 class="text-danger"> > Selma.education </h4>
+          <h6 class="text-white">Full Stack Web Developer - Microverse</h6> 
+          <h6 class="text-white">MBA.Management - The ICT University</h6>
         </div>
   
         <div class="col-10">
-          <h4 class="text-white"> > Selma.hobbies </h4>
-          <h6 class="text-secondary">["design", "gaming", "Movies", "Reading"]</h6>
+          <h4 class="text-danger"> > Selma.hobbies </h4>
+          <h5 class="text-white">[ design, gaming, Movies, Reading ]</h5>
         </div>
     
         <div class="text-center">
@@ -114,25 +262,25 @@
       </div>
 
       <div class="jumbotron col-11 m-auto d-sm-flex bg-white">
-        <div class="col-12 col-md-6 d-sm-block ">
+        <div class="col-12 col-md-6 d-sm-block proj1">
           <img class="image-fluid project" src="./images/steps.png" alt="steps-tracker">
         </div>
-        <div class="col-12 col-md-6 m-auto">
-          <h2 class="text-secondary pt-3">Steps App </h2>
-          <p class="text-secondary">This is a single page application built with react, redux, and rails. 
+        <div class="col-12 col-md-6 m-auto proj1a">
+          <h2 class="text-secondary pt-3">Steps App  </h2>
+          <p class="text-secondary">This is a single page application. 
             The app provides a platform where users can track their steps simply by inputting the steps taken each day.
           </p>
-          <p class="tools">
+          <p class="tools text-secondary">
             <span>Ruby on Rails</span>
             <span>React</span>
             <span>Bootstrap</span>
           </p>
           <p class="d-flex">
-            <a class="linky p-3 rounded " href="https://steps-tracker.herokuapp.com/">
+            <a class="linky p-3 rounded " href="https://steps-tracker.herokuapp.com/" target="_blank">
               Live Demo 
               <img class="icons" src="./images/icons8-open-in-popup-30.png" alt="">
             </a>
-            <a class="whity p-3 rounded " href="https://github.com/Datagirlcmr/steps-tracker">
+            <a class="text-secondary p-3 rounded " href="https://github.com/Datagirlcmr/steps-tracker">
             <img class="icons" src="./images/icons8-github-30.png" alt=""> View Source
           </a>
           </p>
@@ -140,27 +288,27 @@
       </div>
 
       <div class=" jumbotron col-11 m-auto d-sm-flex bg-white">
-        <div class="col-12 col-md-6 d-sm-block ">
+        <div class="col-12 col-md-6 d-sm-block proj2">
           <img class="image-fluid project" src="./images/microverse.png" alt="microverse website">
         </div>
-        <div class="col-12 col-md-6 m-auto">
+        <div class="col-12 col-md-6 m-auto proj2a">
           <h2 class="text-secondary pt-3">Microverse</h2>
           <p class="text-secondary">A website for Microverse. A remote school for software developers.
             The requirements were to build a grid based framework, then use the framework
             to build a web application. This is a static page, meant to show off a combination
             of web design and responsiveness.
           </p>
-          <p class="tools">
+         <p class="tools text-secondary">
             <span>HTML5</span>
             <span>CSS3</span>
             <span>Bootstrap</span>
           </p>
           <p class="d-flex">
-            <a class="linky p-3 rounded " href="https://rawcdn.githack.com/Datagirlcmr/Grid-Based-Framework/fc3b8b29238caae65c455421945806fafeeb0f03/index.html">
+            <a class="linky p-3 rounded " href="https://rawcdn.githack.com/Datagirlcmr/Grid-Based-Framework/fc3b8b29238caae65c455421945806fafeeb0f03/index.html" target="_blank">
               Live Demo
               <img class="icons" src="./images/icons8-open-in-popup-30.png" alt="">
             </a>
-            <a class="whity p-3 rounded " href="https://github.com/Datagirlcmr/Grid-Based-Framework">
+            <a class="text-secondary p-3 rounded " href="https://github.com/Datagirlcmr/Grid-Based-Framework">
             <img class="icons" src="./images/icons8-github-30.png" alt=""> View Source
           </a>
           </p>
@@ -169,26 +317,26 @@
 
 
       <div class=" jumbotron col-11 m-auto d-sm-flex bg-white">
-        <div class="col-12 col-md-6 d-sm-block ">
+        <div class="col-12 col-md-6 d-sm-block proj3 ">
           <img class="image-fluid project" src="./images/tictac.png" alt="microverse website">
         </div>
-        <div class="col-12 col-md-6 m-auto">
+        <div class="col-12 col-md-6 m-auto proj3a">
           <h2 class="text-secondary pt-3">Tic Tac Toe</h2>
           <p class="text-secondary">Tic-tac-toe is a game for two players, X and O,
              who take turns marking the spaces in a 3×3 grid. 
           </p>
-          <p class="tools">
+          <p class="tools text-secondary">
             <span>JavaScript</span>
             <span>Bootstrap</span>
             <span>CSS3</span>
             
           </p>
           <p class="d-flex">
-            <a class="linky p-3 rounded " href="https://datagirlcmr.github.io/Game-Tic-Tac-Toe-/">
+            <a class="linky p-3 rounded " href="https://datagirlcmr.github.io/Game-Tic-Tac-Toe-/" target="_blank">
               Live Demo 
               <img class="icons" src="./images/icons8-open-in-popup-30.png" alt="">
             </a>
-            <a class="whity p-3 rounded " href="https://github.com/Datagirlcmr/Game-Tic-Tac-Toe-/">
+            <a class="text-secondary p-3 rounded " href="https://github.com/Datagirlcmr/Game-Tic-Tac-Toe-/">
             <img class="icons" src="./images/icons8-github-30.png" alt=""> View Source
           </a>
           </p>
@@ -196,26 +344,26 @@
       </div>
 
       <div class=" jumbotron col-11 m-auto d-sm-flex bg-white">
-        <div class="col-12 col-md-6 d-sm-block ">
+        <div class="col-12 col-md-6 d-sm-block proj4">
           <img class="image-fluid project" src="./images/weatherapp.png" alt="microverse website">
         </div>
-        <div class="col-12 col-md-6 m-auto">
+        <div class="col-12 col-md-6 m-auto proj4a">
           <h2 class="text-secondary pt-3">Weatherapp</h2>
           <p class="text-secondary">This project involves implementing aynchronous
              javascript via async/await
              and Promises to build a weather forecast app from the openweather site API.
           </p>
-          <p class="tools">
+         <p class="tools text-secondary">
             <span>JavaScript</span>
             <span>Bootstrap</span>
             <span>Webpack</span>
           </p>
           <p class="d-flex">
-            <a class="linky p-3 rounded " href="https://datagirlcmr.github.io/Weather-App">
+            <a class="linky p-3 rounded " href="https://datagirlcmr.github.io/Weather-App" target="_blank">
               Live Demo 
               <img class="icons" src="./images/icons8-open-in-popup-30.png" alt="">
             </a>
-            <a class="whity p-3 rounded " href="https://github.com/Datagirlcmr/Weather-App">
+            <a class="text-secondary p-3 rounded " href="https://github.com/Datagirlcmr/Weather-App">
             <img class="icons" src="./images/icons8-github-30.png" alt=""> View Source
           </a>
           </p>
@@ -223,26 +371,26 @@
       </div>
 
       <div class=" jumbotron col-11 m-auto d-sm-flex bg-white">
-        <div class="col-12 col-md-6 d-sm-block ">
+        <div class="col-12 col-md-6 d-sm-block proj5 ">
           <img class="image-fluid project" src="./images/swedex.png" alt="modelling website">
         </div>
-        <div class="col-12 col-md-6 m-auto">
+        <div class="col-12 col-md-6 m-auto proj5a">
           <h2 class="text-secondary pt-3">Swedex Models</h2>
           <p class="text-secondary">A website models all over the world. Every page
             has an inbuilt form where models, or those interested in modelling can sign 
-            up and upload their pictures for interview. It is very responsive on mobile. You can view the site <a href="https://www.swedexmodels.org/">here.</a>
+            up and upload their pictures for interview. It is very responsive on mobile.
           </p>
-          <p class="tools">
+          <p class="tools text-secondary">
             <span>HTML5</span>
             <span>CSS3</span>
-            <span>Wordpress</span>
+            <span>Wordpress</span>wedexcontent
           </p>
           <p class="d-flex">
-            <a class="linky p-3 rounded " href="https://swedexmodels.org/">
+            <a class="linky p-3 rounded " href="https://swedexmodels.org/" target="_blank">
               Live Demo 
               <img class="icons" src="./images/icons8-open-in-popup-30.png" alt="">
             </a>
-            <a class="whity p-3 rounded " href="#">
+            <a class="text-secondary p-3 rounded " href="#">
             <img class="icons" src="./images/icons8-github-30.png" alt=""> View Source
           </a>
           </p>
@@ -250,26 +398,26 @@
       </div>
 
       <div class=" jumbotron col-11 m-auto d-sm-flex bg-white">
-        <div class="col-12 col-md-6 d-sm-block ">
+        <div class="col-12 col-md-6 d-sm-block proj6 ">
           <img class="image-fluid project" src="./images/dogstore.png" alt="dog site">
         </div>
-        <div class="col-12 col-md-6 m-auto">
+        <div class="col-12 col-md-6 m-auto proj6a">
           <h2 class="text-secondary pt-3">Dog Breeds</h2>
           <p class="text-secondary">A web page that displays images of dogs and filters 
             them according to breed using the dog api.
           </p>
-          <p class="tools">
+          <p class="tools text-secondary">
             <span>React</span>
             <span>Redux</span>
             <span>Bootstrap</span>
             
           </p>
           <p class="d-flex">
-            <a class="linky p-3 rounded " href="https://dogstorebreed.herokuapp.com/">
+            <a class="linky p-3 rounded " href="https://dogstorebreed.herokuapp.com/" target="_blank">
               Live Demo 
               <img class="icons" src="./images/icons8-open-in-popup-30.png" alt="">
             </a>
-            <a class="whity p-3 rounded " href="https://github.com/Datagirlcmr/dogstore">
+            <a class="text-secondary p-3 rounded " href="https://github.com/Datagirlcmr/dogstore">
             <img class="icons" src="./images/icons8-github-30.png" alt=""> View Source
           </a>
           </p>
@@ -284,16 +432,16 @@
 
       <div class="col-11 m-auto d-sm-flex bg-white">
         <div class="col-12 col-md-6 d-sm-block jumbotron">
-          <h2 class="text-center">One Month at Microverse</h2>
+          <h2 class="text-center text-danger">One Month at Microverse</h2>
           <p class="text-secondary text-center"> And you say learning to code is hard…You say code is not a woman’s  thing…
             You even imply that women are lazy when it comes to tech commitment okay,
              you are staring at a woman who never quits. 
             This is my ever first tech article, and I am almost new to programming...
-            <a href="https://hackernoon.com/one-month-at-microverse-je5d37k1">Continue Reading</a> 
+            <a class="text-danger" href="https://hackernoon.com/one-month-at-microverse-je5d37k1" target="_blank">Continue Reading</a> 
           </p>
         </div>
         <div class="col-12 col-md-5 m-auto ">
-          <h2 class="text-center">Understanding Boolean Methods in Ruby With Examples</h2>
+          <h2 class="text-center text-danger">Understanding Boolean Methods in Ruby With Examples</h2>
           <p class="text-secondary text-center">Most programming languages have a Data Type called “Boolean”. This is
             a form of data with only two possible values (usually “true” and
             “false”). The Ruby language however does not have a Boolean Data
@@ -301,19 +449,19 @@
             Ruby has Boolean Methods, otherwise called Predicates or Query. 
             These are methods that end with a question mark (?) . 
             It will be worth noting that only "false" and "nil"
-             values evaluate to false in Ruby... <a href="https://hackernoon.com/understanding-boolean-methods-in-ruby-with-examples-363n36nu">continue reading</a></p>
+             values evaluate to false in Ruby... <a class="text-danger" href="https://hackernoon.com/understanding-boolean-methods-in-ruby-with-examples-363n36nu" target="_blank">continue reading</a></p>
         </div>
       </div>
 
       <div class="d-flex flex-column flex-sm-row">
         <div class="col-md-5 col-xs-10 m-auto jumbotron">
-          <h2 class="text-center">The Amazing React Router</h2>
+          <h2 class="text-center text-danger">The Amazing React Router</h2>
           <p class="text-secondary text-center"> Usually, when you load up a website, most of the pages like the about page, 
             the contact page have to fetch data from the server before rendering. With React, and React Router, 
             everything becomes simplified because only a specific component loads up. In single-page apps, 
             there is only a single HTML page.
              we are reusing the same HTML page to render the different components based on the navigation.
-            <a href="https://hackernoon.com/the-amazing-react-router-xf133uek">Continue Reading</a> 
+            <a class="text-danger" href="https://hackernoon.com/the-amazing-react-router-xf133uek" target="_blank">Continue Reading</a> 
           </p>
         </div>
       </div>
@@ -322,16 +470,27 @@
     </section>
 
 <!--contact-->
-    <footer class="justify-content-center col-md-10 m-auto">
+    <footer class="justify-content-center col-10 m-auto">
       <a id="contact"></a>
       <div class="">
-        <h1 class="text-center text-secondary pt-5 fading">CONTACT ME</h1>
+        <h1 class="text-center text-secondary pt-5 mb-5 fading">CONTACT ME</h1>
       </div>
-      <h4 class="d-flex flex-column flex-sm-row justify-content-center  mt-5">
-        <a class=" d-md-block text-primary" rel="noopener" target="_blank" href="mailto:datagirlcmr@gmail.com">Email</a>  || 
-        <a class="  d-md-block" target="_blank" href="https://github.com/Datagirlcmr">GitHub </a>||
-        <a class="  d-md-block" target="_blank" href="https://www.linkedin.com/in/selma-ndi/">LinkedIn</a> ||
-        <a class="  d-md-block" target="_blank" href="https://twitter.com/SelmaNdi">Twitter</a>
+      <h4 class="col-10 d-flex m-auto justify-content-center">
+          <div class="col-2">
+            <a class="text-secondary d-md-block" rel="noopener" target="_blank" href="mailto:datagirlcmr@gmail.com"><i class="fas fa-envelope-square"></i>
+            </a>
+          </div>
+         <div class="col-2">
+            <a class=" text-secondary d-md-block" target="_blank" href="https://github.com/Datagirlcmr"><i class="fab fa-github-square"></i>
+            </a>
+         </div>
+         <div class="col-2">
+             <a class=" text-secondary d-md-block" target="_blank" href="https://www.linkedin.com/in/selma-ndi/"><i class="fab fa-linkedin"></i></a>
+         </div>
+        <div class="col-2">
+             <a class=" text-secondary d-md-block" target="_blank" href="https://twitter.com/SelmaNdi"><i class="fab fa-twitter-square"></i>
+             </a>
+         </div>
       </h4>
     </footer>
 

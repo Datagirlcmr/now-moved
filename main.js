@@ -10,17 +10,17 @@ let t = setInterval(function () {
   
 }, 1000);
 
-let skills = [" HTML " , " CSS " , " Bootstrap " , "JavaScript" , " Ruby " , " Ruby on Rails " , " React " , " git "]
-let counter = 0;
+// let skills = [" HTML " , " CSS " , " Bootstrap " , "JavaScript" , " Ruby " , " Ruby on Rails " , " React " , " git "]
+// let counter = 0;
 
-const animate =() => {
-  const selmaSkills = document.querySelector('#skills')
-  selmaSkills.innerHTML = skills[counter++]
+// const animate =() => {
+//   const selmaSkills = document.querySelector('#skills')
+//   selmaSkills.innerHTML = skills[counter++]
 
-  if (counter === skills.length) {
-    counter=0;
-  }
+//   if (counter === skills.length) {
+//     counter=0;
+//   }
 
-}
+// }
 
-let animation = setInterval(animate, 1000)
+// let animation = setInterval(animate, 1000)

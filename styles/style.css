@@ -28,14 +28,14 @@ time, mark, audio, video {
   color: #dc3545 !important;
 }
 
-h4 {
-  font-size: 12px;
-  transition: font-size 2s;
-}
+/*h4 {*/
+/*  font-size: 12px;*/
+/*  transition: font-size 2s;*/
+/*}*/
 
-h4:hover {
-  font-size: 15px;
-}
+/*h4:hover {*/
+/*  font-size: 15px;*/
+/*}*/
 
 .fading {
   font-size: 32px;
@@ -69,36 +69,199 @@ h4:hover {
   width: 250px;
 } /* Some padding */
 
-.main-pic:hover {
-  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-  width: 350px;
-}
+/*.main-pic:hover {*/
+/*  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);*/
+/*  width: 350px;*/
+/*}*/
 
 .project {
   width: 100%;
   height: 100%;
-  transition: width 2s;
   clip-path: polygon(100% 0%, 64% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
 }
 
-.project:hover {
-  width: 110%;
+.proj1 {
+  position: relative;
+  opacity: 0;
+  animation-name: steps;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
 }
+
+@keyframes steps {
+  0% {left: -1000px;}
+  100% {left: 0px; opacity: 1;}
+}
+
+.proj1a {
+  position: relative;
+  opacity: 0;
+  animation-name: stepscontent;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes stepscontent {
+  0% {right: -1000px;}
+  100% {right: 0px; opacity: 1;}
+} 
+
+.proj2 {
+  position: relative;
+  opacity: 0;
+  animation-name: microverse;
+  animation-duration: 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes microverse {
+  0% {left: -1000px;}
+  100% {left: 0px; opacity: 1;}
+}
+
+.proj2a {
+  position: relative;
+  opacity: 0;
+  animation-name: microversecontent;
+  animation-duration: 1s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes microversecontent {
+  0% {right: -1000px;}
+  100% {right: 0px; opacity: 1;}
+} 
+
+.proj3 {
+  position: relative;
+  opacity: 0;
+  animation-name: tictac;
+  animation-duration: 1s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes tictac {
+  0% {left: -1000px;}
+  100% {left: 0px; opacity: 1;}
+}
+
+.proj3a {
+  position: relative;
+  opacity: 0;
+  animation-name: tictaccontent;
+  animation-duration: 1s;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes tictaccontent {
+  0% {right: -1000px;}
+  100% {right: 0px; opacity: 1;}
+} 
+
+.proj4 {
+  position: relative;
+  opacity: 0;
+  animation-name: weather;
+  animation-duration: 1s;
+  animation-delay: 7s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes weather {
+  0% {left: -1000px;}
+  100% {left: 0px; opacity: 1;}
+}
+
+.proj4a {
+  position: relative;
+  opacity: 0;
+  animation-name: weathercontent;
+  animation-duration: 1s;
+  animation-delay: 8s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes weathercontent {
+  0% {right: -1000px;}
+  100% {right: 0px; opacity: 1;}
+} 
+
+.proj5 {
+  position: relative;
+  opacity: 0;
+  animation-name: swedex;
+  animation-duration: 1s;
+  animation-delay: 9s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes swedex {
+  0% {left: -1000px;}
+  100% {left: 0px; opacity: 1;}
+}
+
+.proj5a {
+  position: relative;
+  opacity: 0;
+  animation-name: swedexcontent;
+  animation-duration: 1s;
+  animation-delay: 10s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes swedexcontent {
+  0% {right: -1000px;}
+  100% {right: 0px; opacity: 1;}
+}  
+
+.proj6 {
+  position: relative;
+  opacity: 0;
+  animation-name: dogstore;
+  animation-duration: 1s;
+  animation-delay: 11s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes dogstore {
+  0% {left: -1000px;}
+  100% {left: 0px; opacity: 1;}
+}
+
+.proj6a {
+  position: relative;
+  opacity: 0;
+  animation-name: dogstorecontent;
+  animation-duration: 1s;
+  animation-delay: 12s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes dogstorecontent {
+  0% {right: -1000px;}
+  100% {right: 0px; opacity: 1;}
+}  
+
 
 .tools span {
   border-radius: 4px;
-  border: 2px solid #92eac0;
+  border: 2px solid #dc3545;
   padding: 8px;
   margin-right: 10px;
   margin-bottom: 10px;
   font-family: Camphor, Open Sans, Segoe UI, sans-serif;
   font-size: 0.85em;
-  color: #525f7f;
   width: 110%;
 }
 
 .linky {
-  background: #747fe0;
+  background: #dc3545;
   color: #fff;
 }
 
@@ -134,4 +297,11 @@ h4:hover {
       0% 20%
     );
   }
+}
+
+@media screen and (max-width: 400px) {
+    .tools span {
+        display: flex;
+        flex-direction: column;
+    }
 }
